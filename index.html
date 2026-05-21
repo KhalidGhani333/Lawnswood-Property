@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lawnswood Property | New Homes &amp; Property Specialists</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <img src="lawnswood-logo.png" alt="Lawnswood Property" class="logo-img" />
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#about" onclick="closeMenu()">About</a></li>
+          <li><a href="#services" onclick="closeMenu()">Services</a></li>
+          <li><a href="#properties" onclick="closeMenu()">Properties</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80" alt="New build homes in Yorkshire" />
+    </div>
+    <div class="hero-overlay">
+      <div class="container hero-content">
+        <p class="hero-tag">Yorkshire's Trusted Developers</p>
+        <h1>Exclusively Designed &<br class="desktop-br">Professionally Built</h1>
+        <p class="hero-sub">New homes and property developments across Yorkshire and the wider UK</p>
+        <div class="hero-btns">
+          <a href="#properties" class="btn-primary">View Properties</a>
+          <a href="#contact" class="btn-ghost">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WELCOME / ABOUT -->
+  <section id="about" class="section welcome">
+    <div class="container two-col">
+      <div class="img-col">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80" alt="Modern property interior" class="about-img" />
+      </div>
+      <div class="text-col">
+        <span class="eyebrow">Who We Are</span>
+        <h2>Welcome to Lawnswood Property</h2>
+        <p>At Lawnswood Property we specialise in the design and construction of high-quality new homes across Yorkshire and the wider UK. With years of experience in the industry, our team is dedicated to delivering properties that combine exceptional craftsmanship with modern living standards.</p>
+        <p>We work closely with buyers from initial enquiry through to completion, ensuring a smooth and transparent process every step of the way.</p>
+        <div class="stats-row">
+          <div class="stat">
+            <strong>50+</strong>
+            <span>Homes Built</span>
+          </div>
+          <div class="stat">
+            <strong>10+</strong>
+            <span>Years Experience</span>
+          </div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Client Focused</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services bg-light">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What We Do</span>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-sub">Our promise is simple -quality homes at competitive prices</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22L24 6L42 22V42H30V30H18V42H6V22Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>New Build Homes</h3>
+          <p>Bespoke new build properties designed to the highest specification, tailored to modern family life and built with lasting quality.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="20" width="36" height="22" rx="2" stroke="currentColor" stroke-width="2.5"/><path d="M16 20V14a8 8 0 0116 0v6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="31" r="3" stroke="currentColor" stroke-width="2.5"/></svg>
+          </div>
+          <h3>Property Development</h3>
+          <p>We identify and develop residential sites across the region, creating desirable communities in sought-after locations.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 6h32v36H8z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M16 16h16M16 24h16M16 32h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Sales &amp; Completions</h3>
+          <p>A straightforward sales process with clear communication and dedicated support from reservation through to key handover.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPERTIES -->
+  <section id="properties" class="section properties">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">New Homes</span>
+        <h2 class="section-title">Current Developments</h2>
+        <p class="section-sub">Explore our latest new home developments across Yorkshire</p>
+      </div>
+      <div class="properties-grid">
+        <div class="property-card">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Development One – Yorkshire" class="prop-img" />
+          <div class="prop-info">
+            <p class="prop-location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/></svg>
+              Yorkshire
+            </p>
+            <h3>Development One</h3>
+            <p>A selection of 3 and 4 bedroom detached and semi-detached homes in a sought-after location with excellent transport links.</p>
+            <a href="#contact" class="btn-outline">Enquire Now</a>
+          </div>
+        </div>
+        <div class="property-card">
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="Development Two – West Yorkshire" class="prop-img" />
+          <div class="prop-info">
+            <p class="prop-location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/></svg>
+              West Yorkshire
+            </p>
+            <h3>Development Two</h3>
+            <p>Stunning new build homes finished to a premium standard, featuring private gardens, modern kitchens and allocated parking.</p>
+            <a href="#contact" class="btn-outline">Enquire Now</a>
+          </div>
+        </div>
+        <div class="property-card">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Development Three – North Yorkshire" class="prop-img" />
+          <div class="prop-info">
+            <p class="prop-location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/></svg>
+              North Yorkshire
+            </p>
+            <h3>Development Three</h3>
+            <p>Thoughtfully designed homes in a peaceful setting, ideal for growing families and first-time buyers looking for quality.</p>
+            <a href="#contact" class="btn-outline">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section why bg-navy">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow light">Our Standards</span>
+        <h2 class="section-title light">Why Choose Lawnswood Property?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <span class="why-num">01</span>
+          <h4>Quality Craftsmanship</h4>
+          <p>Every home is built using premium materials and finished to an exceptionally high standard inside and out.</p>
+        </div>
+        <div class="why-item">
+          <span class="why-num">02</span>
+          <h4>Competitive Pricing</h4>
+          <p>We offer excellent value for money without ever compromising on the quality or design of our homes.</p>
+        </div>
+        <div class="why-item">
+          <span class="why-num">03</span>
+          <h4>Dedicated Support</h4>
+          <p>Our team is on hand from first enquiry right through to completion, answering every question along the way.</p>
+        </div>
+        <div class="why-item">
+          <span class="why-num">04</span>
+          <h4>Energy Efficient</h4>
+          <p>All our new homes are built with energy efficiency in mind, helping to reduce bills and environmental impact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact bg-light">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Get In Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-sub">Interested in our developments? Our team is ready to help</p>
+      </div>
+      <div class="contact-centered">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="Your email address" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+          </div>
+          <div class="form-group">
+            <label for="interest">Interested In</label>
+            <input type="text" id="interest" name="interest" placeholder="Which development or service are you interested in?" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Send Enquiry</button>
+          <div id="formMsg" class="form-msg" style="display:none"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col brand-col">
+        <a href="#" class="logo footer-logo">
+          <img src="lawnswood-logo.png" alt="Lawnswood Property" class="logo-img" />
+        </a>
+        <p>New homes and property developments across Yorkshire and the UK. Quality built, professionally delivered.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#properties">Properties</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Lawnswood Property Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Auto year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Sticky header shadow on scroll
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Mobile menu toggle
+    function toggleMenu() {
+      const nav = document.getElementById('mainNav');
+      const btn = document.getElementById('hamburger');
+      nav.classList.toggle('open');
+      btn.classList.toggle('active');
+    }
+    function closeMenu() {
+      document.getElementById('mainNav').classList.remove('open');
+      document.getElementById('hamburger').classList.remove('active');
+    }
+    // Close menu if clicking outside
+    document.addEventListener('click', (e) => {
+      const nav = document.getElementById('mainNav');
+      const btn = document.getElementById('hamburger');
+      if (!nav.contains(e.target) && !btn.contains(e.target)) closeMenu();
+    });
+
+    // Simple form feedback
+    function handleSubmit(e) {
+      e.preventDefault();
+      const msg = document.getElementById('formMsg');
+      msg.style.display = 'block';
+      msg.className = 'form-msg success';
+      msg.textContent = 'Thank you for your enquiry. We will be in touch shortly.';
+      e.target.reset();
+    }
+  </script>
+
+</body>
+</html>
