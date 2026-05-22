@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms &amp; Conditions | Lawnswood Property</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="legal.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="lawnswood-logo.png" alt="Lawnswood Property" class="logo-img" />
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="legal-hero">
+    <div class="container">
+      <span class="eyebrow light">Legal</span>
+      <h1>Terms &amp; Conditions</h1>
+      <p>Last updated: 22 May 2026</p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="legal-content section bg-light">
+    <div class="container">
+      <div class="legal-body">
+
+        <div class="legal-section">
+          <h2>1. Introduction</h2>
+          <p>These Terms &amp; Conditions govern your use of <strong>www.lawnswoodproperty.com</strong>. By using this website, you agree to these terms.</p>
+          <p>If you do not agree, please do not use the website.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>2. Use of Website</h2>
+          <p>You agree to use this website lawfully and not:</p>
+          <ul class="legal-list">
+            <li>Misuse or disrupt the website</li>
+            <li>Attempt unauthorised access</li>
+            <li>Upload harmful or illegal material</li>
+          </ul>
+          <p>We may suspend or terminate access if these terms are breached.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>3. Intellectual Property</h2>
+          <p>All content on this website, including text, images, logos, and branding, belongs to Lawnswood Property unless otherwise stated.</p>
+          <p>You may not reproduce or distribute content without permission.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>4. Accuracy of Information</h2>
+          <p>We aim to keep information accurate and up to date but do not guarantee completeness or accuracy.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>5. External Links</h2>
+          <p>This website may contain links to third-party websites. We are not responsible for their content or practices.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>6. Limitation of Liability</h2>
+          <p>To the fullest extent permitted by law, Lawnswood Property shall not be liable for any loss or damage arising from use of this website.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>7. Privacy</h2>
+          <p>Your use of this website is also governed by our <a href="privacy-policy.html">Privacy Policy</a> and <a href="cookie-policy.html">Cookie Policy</a>.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>8. Changes to These Terms</h2>
+          <p>We may update these Terms &amp; Conditions at any time. Continued use of the website means you accept any updates.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>9. Governing Law</h2>
+          <p>These terms are governed by the laws of England and Wales.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>10. Contact</h2>
+          <p><strong>Lawnswood Property</strong><br />Midlands, UK<br />Email: <a href="mailto:admin@lawnswoodproperty.com">admin@lawnswoodproperty.com</a></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col brand-col">
+        <a href="index.html" class="logo footer-logo">
+          <img src="lawnswood-logo.png" alt="Lawnswood Property" class="logo-img" />
+        </a>
+        <p>New homes and property developments across Midlands and the UK. Quality built, professionally delivered.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Lawnswood Property Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    });
+    function toggleMenu() {
+      document.getElementById('mainNav').classList.toggle('open');
+      document.getElementById('hamburger').classList.toggle('active');
+    }
+    document.addEventListener('click', (e) => {
+      const nav = document.getElementById('mainNav');
+      const btn = document.getElementById('hamburger');
+      if (!nav.contains(e.target) && !btn.contains(e.target)) {
+        nav.classList.remove('open');
+        btn.classList.remove('active');
+      }
+    });
+  </script>
+
+</body>
+</html>
